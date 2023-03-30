@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Compatible con internet explorer-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Un sitio responsivo. Para trabajar con sitios responsivos Se adecua al tamaño del dispositivo-->
   <link rel="icon" typr="image/x-icon" href="./img/favicon.ico" /> <!--nos saca de la carpeta-->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   <title> Frontend. </title>
 </head>
 
@@ -15,40 +16,44 @@
 
     <img src="./img/favicon.ico" alt="Logo de mi pagina" /> <!--Investigar atributo alt. Es un alternativo en caso de algun error en la imagen. Texto alternativo-->
     <h1>Mi primera web </h1><!--Buena practica. Un solo h1 en todo mi codigo, para los robots-->
-
-    <nav> <!--Investigar el nav-->
-      <ul>
-          <li> 
-            <a href="https://www.w3schools.com/html/html_favicon.asp" target="_parent"> Pagina 2 </a><!--Por defecto-->
-          </li>
-
-          <li>
-            <a href="https://www.w3schools.com/html/html_favicon.asp" target="_blank"> Google </a>
-          </li>
-
-          <li>
-            <a href="https://www.w3schools.com/html/html_favicon.asp" target="_self"> Pagina 3 </a>
-          </li>
-      </ul>
-    </nav>
-
     <div>
-      <p> Hola mundo</p>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    </div>
 
+  </header>
 
-
-
-
-
-
-
+  <aside><!--No esta completamente relacionado con el contenido, pero hacer parte. Puede estar dentro del maino fuera-->
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Docentes</a></li>
+        <li><a href="#">Configuraciones</a></li>
       </ul>
-
     </nav>
+  </aside>
 
-   </header>
+  <main>
+    <section><!--Secciones de mi contenido que tenga un sentido comun-->
+      <article><!--Es parte de una section-->
+        <h2>Docentes creados</h2>
+        <p>20</p>
+      </article>
+      <article>
+        <h2>Docentes Activos</h2>
+        <p>10</p>
+      </article>
+      <article>
+        <h2>Docentes inactivos</h2>
+        <p>10</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Derechos reservados 2023 - Hecho con amor</p>
+
+  </footer>
 
 </body>
 
