@@ -17,7 +17,8 @@ header {
         align-items:center;
         background-color:#2c3e50;
         color: #ffffff;
-        padding:10px;    
+        padding:10px;
+        z-index:0;    
 }
 
 .logo { 
@@ -32,7 +33,6 @@ header {
 
 
 .menu-btn {
-     display:none;
      cursor: pointer;    
 }
 
@@ -45,3 +45,40 @@ header {
     border-radius:3px;
 }
 
+aside{
+
+    position:fixed; /*Se desligue de todo el contenido de la web. */
+    top:0px;
+    left:-250px;
+    width:250px;
+    height:100%;
+    background-color:#2c3e50;
+    z-index:1;
+    color:white;
+    padding:20px;
+    transition:all 0.3s ease-in-out;
+    overflow-y:auto;
+}
+
+aside.active{
+    left:0;
+}
+
+nav ul{
+    padding:0px;
+    margin:20px;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+
+}
+
+nav ul li > a:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+nav ul li a{text-decoration:none;
+            color:white;
+}
